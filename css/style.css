@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, Helvetica, sans-serif;
+}
+/* root */
+:root {
+  --bodyBackground:#E7e7e7;
+  --Main-color: #0191b4;
+  --text-color: #b4b4b4;
+  --text-color-p: #333;
+  --shadow:#371b5869;
+  --border:#0191b4;
+  --box-background:#FFF;
+
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  display: grid;
+  place-content: center;
+  background-color:var(--bodyBackground);
+}
+.darkMode{
+  --bodyBackground:#1f2122;
+  --Main-color: #455054;
+  --text-color: #b4b4b4;
+  --text-color-p: #9e9d9ddd;
+  --shadow:#ffffff34;
+  --border:#b4b4b4;
+  --box-background:#292a2b;
+}
+.container {
+  width: 96vw;
+  height: 96vh;
+  margin-top: 2vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.container .box1,.box2,.box3,.box4 {
+  width: 49%;
+  height: 49%;
+  box-shadow: -1px 1px 3px 0px var(--shadow) ;
+  border-radius: 8px;
+  background-color:var(--box-background);
+}
+.container .box1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3vh;
+  position: relative;
+}
+.container .box1 img {
+  width: 12vw;
+  height: 17vh;
+  border-radius: 50%;
+  border: 0.25vw solid var(--border);
+  box-shadow: -1px 1px 11px 0px var(--shadow);
+}
+.container .box1 h2 {
+  font-size: 3.5vw;
+  color: var(--text-color);
+}
+.container .box1 p {
+  font-size: 1.5vw;
+  color: var(--text-color-p);
+}
+.container .box1 .icons {
+  width: 30%;
+  height: 4vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container .box1 .icons i {
+  font-size: 2vw;
+  cursor: pointer;
+}
+.container .box1 .icons i:first-child {
+  color: #1da1f2;
+}
+.container .box1 .icons i:nth-child(2) {
+  color: #0072b1;
+}
+.container .box1 .icons i:nth-child(3) {
+  color: #c4302b;
+}
+.container .box1 .icons i:last-child {
+  color: #3b5998;
+}
+.container .box1 button {
+  width: 12vw;
+  height: 4vh;
+  border-radius: 8px;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid var(--border);
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 1vw;
+  color: var(--text-color-p);
+}
+.container .box1 button:hover {
+  color: #fff;
+  background-color: var(--Main-color);
+  border: 1px solid var(--Main-color);
+}
+.container .box1 small {
+  width: 5vw;
+  height: 4vh;
+  background-color: var(--border);
+  border-radius: 15px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25vw;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid var(--border);
+  transition: .5s;
+  color: var(--text-color-p);
+}
+.container .box1 small:hover {
+  color: #fff;
+  background-color: var(--Main-color);
+  border: 1px solid var(--Main-color);
+}
+
